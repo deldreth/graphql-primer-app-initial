@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import styled from "react-emotion";
+import styled from 'react-emotion';
 
 export default class AddLocation extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      name: ""
+      name: '',
     };
   }
 
@@ -31,7 +31,7 @@ export default class AddLocation extends Component {
   }
 }
 
-const Form = styled("form")`
+const Form = styled('form')`
   display: grid;
   grid-gap: 1em;
 

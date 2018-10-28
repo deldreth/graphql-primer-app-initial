@@ -1,10 +1,10 @@
-import React, { Component, lazy } from "react";
+import React, { Component, lazy } from 'react';
 
-import { HashRouter, Route } from "react-router-dom";
-import styled from "react-emotion";
+import { HashRouter, Route } from 'react-router-dom';
+import styled from 'react-emotion';
 
-const Locations = lazy(() => import("./containers/Locations"));
-const Agency = lazy(() => import("./containers/Agency"));
+const Locations = lazy(() => import('./containers/Locations'));
+const Agency = lazy(() => import('./containers/Agency'));
 
 class App extends Component {
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
 
 export default App;
 
-const Grid = styled("div")`
+const Grid = styled('div')`
   display: grid;
   grid-template-columns: 1fr 2fr;
 `;

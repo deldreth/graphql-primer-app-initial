@@ -1,9 +1,9 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 
-import styled from "react-emotion";
-import { Link } from "react-router-dom";
+import styled from 'react-emotion';
+import { Link } from 'react-router-dom';
 
-import AddLocation from "./AddLocation";
+import AddLocation from './AddLocation';
 
 function Locations(props) {
   return (
@@ -19,6 +19,6 @@ function Locations(props) {
 
 export default memo(Locations);
 
-const Container = styled("div")`
+const Container = styled('div')`
   margin: 1em;
 `;

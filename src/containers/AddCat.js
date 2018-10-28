@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import PropTypes from "prop-types";
-import styled from "react-emotion";
+import PropTypes from 'prop-types';
+import styled from 'react-emotion';
 
-import breeds from "../data/breeds";
+import breeds from '../data/breeds';
 
 export default class AddCat extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      name: "",
-      breed: ""
+      name: '',
+      breed: '',
     };
   }
 
@@ -27,13 +27,13 @@ export default class AddCat extends Component {
           <input
             type="text"
             value={this.state.name}
-            onChange={this.onChange("name")}
+            onChange={this.onChange('name')}
           />
         </FormControl>
 
         <FormControl>
           <label>Breed</label>
-          <select value={this.state.breed} onChange={this.onChange("breed")}>
+          <select value={this.state.breed} onChange={this.onChange('breed')}>
             <option value="" />
             {breeds.map(breed => {
               return (
@@ -52,10 +52,10 @@ export default class AddCat extends Component {
 }
 
 AddCat.propTypes = {
-  locationId: PropTypes.string
+  locationId: PropTypes.string,
 };
 
-const Form = styled("form")`
+const Form = styled('form')`
   max-width: 50%;
 
   display: grid;
@@ -70,4 +70,4 @@ const Form = styled("form")`
   }
 `;
 
-const FormControl = styled("div")``;
+const FormControl = styled('div')``;

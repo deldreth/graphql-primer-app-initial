@@ -1,8 +1,8 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 
-import styled from "react-emotion";
+import styled from 'react-emotion';
 
-import AddCat from "./AddCat";
+import AddCat from './AddCat';
 
 function Agency(props) {
   return (
@@ -26,12 +26,12 @@ function Agency(props) {
 
 export default memo(Agency);
 
-const Container = styled("div")`
+const Container = styled('div')`
   padding: 1em;
   border-left: 1px solid #efefef;
 `;
 
-const Cats = styled("div")`
+const Cats = styled('div')`
   display: grid;
   grid-gap: 1em;
 
@@ -46,7 +46,7 @@ const Cats = styled("div")`
   }
 `;
 
-const Cat = styled("div")`
+const Cat = styled('div')`
   border: 1px solid #efefef;
   padding: 1em;
 `;
