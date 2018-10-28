@@ -36,7 +36,11 @@ export default class AddCat extends Component {
           <select value={this.state.breed} onChange={this.onChange("breed")}>
             <option value="" />
             {breeds.map(breed => {
-              return <option value={breed.value}>{breed.label}</option>;
+              return (
+                <option key={breed.value} value={breed.value}>
+                  {breed.label}
+                </option>
+              );
             })}
           </select>
         </FormControl>

@@ -1,4 +1,4 @@
-import React, { memo, Fragment } from "react";
+import React, { memo } from "react";
 
 import styled from "react-emotion";
 
@@ -12,6 +12,7 @@ function Agency(props) {
       <AddCat locationId={props.match.params.id} />
 
       <hr />
+
       <h2>Cats at this location</h2>
 
       <Cats>
